@@ -19,6 +19,7 @@
 
 body {
   /* Add a background colour of #1d3557ff */
+  background-color: #1d3557ff;
 }
 
 
@@ -26,17 +27,31 @@ body {
 
 header {
   /* Set the text colour, margins and padding */
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  color: #f1faeeff;
 }
 
 header .site-title {
   /* Add some cool text styles to the site title */
   /* Experiment with the font-size, font-weight, text-transform, letter-spacing */
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 1mm;
 }
 
 header nav {
   /* Experiment with margin until you find spacing
    * that you like
   */
+  margin-right: 0;
+  margin-left: 27rem;
+  margin-top: 0;
+  padding-right: 0;
+  text-align: right;
 }
 
 header nav ul {
@@ -46,15 +61,24 @@ header nav ul {
    * the bullet points
    */
   /* You may also have tweak the margin and padding */
+
+  list-style: none;
+  margin-right: 0;
+  padding-right: 0;
+  text-align: right;
 }
+
 
 header a {
   /* Set the text colour and remove the underline */
   /* Make the links white (or any cool colour */
+  color: antiquewhite;
+  text-decoration: none;
 }
 
 header a:hover {
   /* Add an underline to the links when you hover over them */
+  text-decoration: underline;
 }
 
 /* GENERAL SECTION STYLES */
@@ -73,6 +97,10 @@ header a:hover {
 main > section {
   /* Set the margins, padding and background colour */
   /* Set the border radius to give it rounded corners */
+  border-radius: 0.5rem;
+  background-color: antiquewhite;
+  margin-left: 1em;
+  padding: 2%;
 }
 
 /* This fancy code removes the bottom margin from the last section */
@@ -87,18 +115,28 @@ main section.hero {
   /* Start by setting the padding */
   /* Set the background colour */
   /* Set the border radius to give it rounded corners */
+  padding: 2%;
+  background-color: #a8dadcff;
+  border-radius: 1%;
 }
 
 main section.hero h1 {
   /* Set the font size, margins and text colour */
   /* Experiment with letter-spacing to see what it does */
   /* Google how to align text in the center */
+  font-size: 2em;
+  color: #1d3557ff;
+  letter-spacing: 1cqb;
+  text-align: center;
 }
 
 main section.hero .secondary-heading {
   /* Set the font size, margins and text colour */
   /* Experiment with letter-spacing to see what it does */
   /* Google how to align text in the center */
+  font-size: large;
+  letter-spacing: 0.2em;
+  text-align: center;
 }
 
 main section.hero img {
@@ -118,6 +156,9 @@ main section.hero img {
 
 main section.menu {
   /* Set the padding, background colour and border radius */
+  padding: 4%;
+  background-color: antiquewhite;
+  border-radius: 1%;
 }
 
 main section.menu ul {
@@ -127,11 +168,20 @@ main section.menu ul {
    * the bullet points
    */
   /* You may also have tweak the margin and padding */
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1rem;
 }
 
 main section.menu ul li {
   /* Set the padding, margin-top and border radius */
   /* Set the background colour */
+  padding-top: 1%;
+  margin-top: 1%;
+  border-radius: 1rem;
+  background-color: #1d3557ff;
+  padding-left: 5%;
+  color: antiquewhite;
 }
 
 /* Use psuedo classes nth-child(even)
@@ -142,6 +192,11 @@ main section.menu ul li {
  * background-color: #a8dadcff;
  */
 
+ main section.menu li:nth-child(even) {
+  background-color: #a8dadcff;
+  color: #1d3557ff;
+ }
+
 
 
 /* TESTIMONIAL SECTION STYLES */
@@ -151,6 +206,9 @@ main section.menu ul li {
 main section.testimonial {
   /* Set the padding and background colour #f1faeeff */
   /* Set the border radius */
+  padding: 1%;
+  background-color: #f1faeeff;
+  border-radius: 1%;
 }
 
 /*
@@ -164,10 +222,19 @@ main section.testimonial {
 
 */
 
+main section.testimonials h2 {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bolder;
+  color: #e63946ff;
+}
+
 main section.testimonials img {
   width: 100%;
   max-width: 100%;
   /* Put a border radius on just the top of the image */
+  border-top-right-radius: 10cqb;
+  border-top-left-radius: 10cqb;
 }
 
 /*
@@ -185,6 +252,18 @@ main section.testimonials img {
   - Put a border radius on just the bottom of the blockquote
 
 */
+
+main section.testimonials blockquote {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1rem;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  background-color: #457b9dff;
+  color: antiquewhite;
+  border-bottom-left-radius: 10cqb;
+  border-bottom-right-radius: 10cqb;
+}
 
 /* AND THAT'S IT! YOU ARE DONE. CONGRATULATIONS. POST YOUR LINK! */
 
